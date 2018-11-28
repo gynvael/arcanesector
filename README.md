@@ -1,10 +1,12 @@
 # Arcane Sector
-A Dragon Sector CTF old-school RPG Game.
+A Dragon Sector CTF old-school (MMO)RPG Game.
+
+**NOTE**: The rest of this README file might contain incomplete/outdated/inaccurate information. One thing that is correct though, is the network packet description.
 
 ## Design
-Arcane Sector is a multiplayer old-school 2.5D RPG game. Almost all logic for the game is server-side, and each team gets their own server (Python). The client is implemented in C++ (it's not a setup for a pwn challenge though, C++ is chosen for speed, so the implementation should be as flawless as possible) with an API-agnostic graphics engine (i.e. all graphics are done on frame buffers in memory), and should have at least two versions - <S></S>DL and websock/webRTC.
+Arcane Sector is a multiplayer old-school 2.5D RPG game. Almost all logic for the game is server-side (on a CTF each team should get their own server, so the teams don't influence each other / don't oversee a solution to a task when another team is solving it). The client is implemented in C++ (it's not a setup for a pwn challenge though, C++ is chosen for speed, so the implementation should be as flawless as possible - not saying it is, but it should be) with an API-agnostic graphics engine (i.e. all graphics are done on frame buffers in memory). There are two I/O systems present in the client - SDL2 (desktop) and JS/WebSocket (thin client).
 
-Initially the players get access only to the web version (video/audio/keyboard/mouse is proxied) and have to get access to a `backup.zip` file containing the client + an incomplete server. Only then MOST of the challenges are solvable.
+Initially on the CTF the players got access only to the web version (video/audio/keyboard/mouse is proxied) and had to get access to a `backup.zip` file containing the client + an incomplete server (only the flag files were missing though). Only then MOST of the challenges were solvable.
 
 ## Glossary
 
@@ -12,9 +14,9 @@ Initially the players get access only to the web version (video/audio/keyboard/m
 
 ## Visuals
 
-The game uses a pseudo-3D view typical for old school RPGs like Ishar, Eye of Beholder, Dungeon Master, etc. The pseudo-3D is rendered by an actual software 3D engine, which supports some (but not all) typical 3D operations. For example it can do fog and texturing, but can render only certain types of axis-aligned quads - this is actually enough to render a game of this type while keeping the code relatively short (the whole 3D stuff is actually just 350 lines of code).
+The game uses a pseudo-3D view typical for old school RPGs like Ishar, Eye of Beholder, Dungeon Master, etc. The pseudo-3D is rendered by an actual software 3D engine (OK, in retrospect not using OpenGL/Vulkan wasn't a good idea), which supports some (but not all) typical 3D operations. For example it can do fog and texturing, but can render only certain types of axis-aligned quads - this is actually enough to render a game of this type while keeping the code relatively short (the whole 3D stuff is actually just 350 lines of code).
 
-The initial idea (that probably will be kept) is that the 3D view will be rendered in 428 x 240 pixels, but will be upscaled to whatever the actual window size (with pixelization).
+The initial idea was that the 3D view will be rendered in 428 x 240 pixels, but will be upscaled to whatever the actual window size (with pixelization) - this is done to maintain the old-school feel of the game.
 
 Some random technicalities about the pseudo-3D:
 
