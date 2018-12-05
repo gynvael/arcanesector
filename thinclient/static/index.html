@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Arcane Sector Online</title>
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Almendra|MedievalSharp');
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height:100%;
+  overflow:hidden;
+  font-family: 'Almendra', serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #462604;
+  text-shadow: -1px -1px 0 #f3d0a7, 1px -1px 0 #f3d0a7, -1px 1px 0 #f3d0a7, 1px 1px 0 #f3d0a7;
+}
+
+canvas {
+  image-rendering: pixelated;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+input {
+  font-family: 'Almendra', serif;
+  color: black;
+  font-size: 1.2em;
+  width: 100%;
+  background-color: #eebe82;
+  border: 1px solid #462604;
+}
+
+button {
+  font-family: 'Almendra', serif;
+  color: #eebe82;
+  font-size: 1.2em;
+  background-color: #462604;
+  border: 1px solid #eebe82;
+}
+
+img {
+  visibility: hidden;
+  display: none;
+}
+
+.no_selection {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+}
+
+#login_panel {
+  position: absolute;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+#panel {
+  position: absolute;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 45%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  width: 70%;
+  height: 60%;
+}
+
+#msg_panel {
+  position: absolute;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+#msg {
+  position: absolute;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  width: 50%;
+  height: 20%;
+}
+
+
+    </style>
+  </head>
+
+  <body class="no_selection">
+    <div id="msg_panel">
+      <div id="msg">
+        <center><span id="error_login"></span></center>
+      </div>
+    </div>
+    <div id="login_panel">
+      <div id="panel">
+        <label for="player_id">Player ID (0-255):</label>
+        <input id="player_id" type="number"><br />
+        <label for="password">Password:</label>
+        <input id="password" type="password"><br />
+        <label for="name">Preferred name (used only on character creation):</label>
+        <input id="name"><br /><br />
+
+        <center><button id="login">Connect</button></center>
+
+        <center><span id="error_login">CTF Note: Logging into the game <b>IS NOT</b> part of the challenge.<br />If you do not have a player_id/password, please ask the CTF admins - we will create an account for you.</span></center>
+      </div>
+    </div>
+
+    <canvas id="c" width="428" height="240" class="no_selection" oncontextmenu="return false;"></canvas>
+
+    <!-- precache images -->
+    <img src="/lower.png" id="lower" />
+    <img src="/lower_grad.png" id="lower_grad" />
+    <img src="/map.png" id="map" />
+    <img src="/upper.png" id="upper" />
+    <img src="/upper_grad.png" id="upper_grad" />
+    <img src="/framedump_pre_walls.png" id="test" /> <!-- remove -->
+  </body>
+
+<script src="/js.cookie.js"></script>
+<script
+  src="/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script>
+const SPLASH_ANIM_TIME = 1.0;  // Seconds.
+const SPLASH_ANIM_START = 0.5;  // Seconds.
+const SPLASH_MAX_SEP_UPPER = 75;
+const SPLASH_MAX_SEP_LOWER = 100;
+const SPLASH_MAP_SPEED = 10;  // Pixels per second.
+var time_start;
+var login_visible = false;
+var started = false;
+var ws = null;
+var msg_visible = false;
+var render_splash = true;
+var initial_show = false;
+
+var mx = 0;
+var my = 0;
+
+var cursor = null;
+
+// https://stackoverflow.com/questions/13416800/how-to-generate-an-image-from-imagedata-in-javascript
+function imagedata_to_image(imagedata) {
+    var canvas = document.createElement('canvas');
+    var ctx = canvas.getContext('2d');
+    canvas.width = imagedata.width;
+    canvas.height = imagedata.height;
+    ctx.putImageData(imagedata, 0, 0);
+    return canvas.toDataURL();
+}
+
+function game_connect() {
+  if (ws) {
+    ws.onclose = function(){};
+    ws.close();
+    ws = null;
+  }
+
+  if (login_visible) {
+    login_visible = false;
+    $('#login_panel').fadeOut("fast");
+  }
+
+  if (!msg_visible) {
+    msg_visible = true;
+    $('#msg_panel').fadeIn("fast");
+  }
+
+  $('#error_login').text("Connecting...");
+
+  ws = new WebSocket("ws://" + location.host + "/websocket", "game");
+  ws.binaryType = 'arraybuffer';
+  ws.onopen = function(ev) {
+    msg_visible = false;
+    $('#msg_panel').fadeOut("fast");
+    render_splash = false;
+  };
+
+  ws.onclose = function(ev) {
+    if (!msg_visible) {
+      msg_visible = true;
+      $('#msg_panel').fadeIn("fast");
+    }
+
+    $('#error_login').text("Disconnected. Reconnecting in 10 seconds...");
+    setTimeout(game_connect, 10000);
+  }
+
+  ws.onmessage = function(ev) {
+    let view = new Uint8Array(ev.data);
+
+    if (view.length === 0) {
+      return;
+    }
+
+    let packet_id = view[0];
+
+    if ((packet_id & 1) == 0) {
+      // Keyframe.
+      var img_data = new ImageData(new Uint8ClampedArray(ev.data), 428, 240);
+      let canvas = $('#c')[0];
+      let ctx = canvas.getContext("2d");
+      ctx.putImageData(img_data, 0, 0);
+
+      // Ack frame.
+      packet = new Uint8Array(1);
+      packet[0] = 0;
+      ws.send(packet);
+      return;
+    }
+
+    if (packet_id == 1) {
+      let canvas = $('#c')[0];
+      let ctx = canvas.getContext("2d");
+
+      // Diff frame.
+      let i = 1;
+      while (i < ev.data.byteLength) {
+        let line = view[i];
+        i++;
+
+        if (i + 428 * 4 > ev.data.byteLength) {
+          break;
+        }
+
+        let row_bytes = new Uint8ClampedArray(ev.data, i, 428 * 4);
+        var img_data = new ImageData(row_bytes, 428, 1);
+        ctx.putImageData(img_data, 0, line);
+        i += 428 * 4;
+      }
+
+      // Ack frame.
+      packet = new Uint8Array(1);
+      packet[0] = 0;
+      ws.send(packet);
+    }
+
+    if (packet_id == 0x21) {
+      $("body").css("cursor", 'auto');
+    }
+
+    if (packet_id == 0x23) {
+      let hx = view[1] | (view[2] << 8);
+      let hy = view[3] | (view[4] << 8);
+      let w = view[5] | (view[6] << 8);
+      let h = view[7] | (view[8] << 8);
+
+      let img_bytes = new Uint8ClampedArray(ev.data, 9, w * h * 4);
+      let img_data = new ImageData(img_bytes, w, h);
+      let data_url = imagedata_to_image(img_data);
+      $("body").css("cursor", 'url("' + data_url + '"), auto');
+    }
+  }
+}
+
+function render_game_frame() {
+  //let canvas = $('#c')[0];
+  //let ctx = canvas.getContext("2d");
+  //ctx.drawImage($('#test')[0], 0, 0);
+
+  if (render_splash) {
+    setTimeout(render_splash_frame, 50);
+  } else {
+    setTimeout(render_game_frame, 50);
+  }
+}
+
+function render_splash_frame() {
+  let canvas = $('#c')[0];
+  let ctx = canvas.getContext("2d");
+
+  let time_progress = (Date.now() - time_start) / 1000.0;
+  let sep_lower = 0;
+  let sep_upper = 0;
+
+  if (time_progress > SPLASH_ANIM_START + SPLASH_ANIM_TIME) {
+    sep_upper = SPLASH_MAX_SEP_UPPER;
+    sep_lower = SPLASH_MAX_SEP_LOWER;
+
+    if (!login_visible && !initial_show) {
+      login_visible = true;
+      initial_show = true;
+      $('#login_panel').fadeIn("slow");
+    }
+
+
+  } else if (time_progress > SPLASH_ANIM_START) {
+    let progress = (time_progress - SPLASH_ANIM_START) / SPLASH_ANIM_TIME;
+    sep_upper = (SPLASH_MAX_SEP_UPPER * progress) | 0;
+    sep_lower = (SPLASH_MAX_SEP_LOWER * progress) | 0;
+  } else {
+  }
+
+  let map_scroll = ((time_progress * SPLASH_MAP_SPEED)) % 1000;
+  ctx.drawImage($('#map')[0], -map_scroll, 0);
+  ctx.drawImage($('#map')[0], -map_scroll + 1000, 0);
+
+
+  ctx.drawImage($('#lower_grad')[0], 0, -113 + sep_lower);
+  ctx.drawImage($('#upper_grad')[0], 0, 127 - sep_upper);
+
+  ctx.drawImage($('#lower')[0], 0, sep_lower);
+  ctx.drawImage($('#upper')[0], 0, -sep_upper);
+
+  if (render_splash) {
+    setTimeout(render_splash_frame, 50);
+  } else {
+    setTimeout(render_game_frame, 50);
+  }
+}
+
+function start() {
+  time_start = Date.now();
+
+  let player_id = Cookies.get('player_id');
+  let password = Cookies.get('password');  // Whatever.
+  let name = Cookies.get('name');
+
+  if (player_id) $('#player_id').val(player_id);
+  if (password) $('#password').val(password);
+  if (name) $('#name').val(name);
+
+  $('#login').click(function() {
+    let player_id = parseInt($('#player_id').val());
+    let password = $('#password').val();
+    let name = $('#name').val();
+
+    if (!(player_id >= 0 && player_id < 256)) {
+      $('#error_login').text("Player ID must be between 0 and 255.");
+      return;
+    }
+
+    if (password.length == 0) {
+      $('#error_login').text("Password cannot be empty.");
+      return;
+    }
+
+    if (name.length == 0) {
+      $('#error_login').text("Name cannot be empty.");
+      return;
+    }
+
+    Cookies.set('player_id', player_id, { expires: 365 });
+    Cookies.set('password', password, { expires: 365 });
+    Cookies.set('name', name, { expires: 365 });
+
+    $('#error_login').text("Connecting...");
+    game_connect();
+  });
+
+  $('#c').mousedown(function(ev) {
+    if (!ws) {
+      return;
+    }
+
+    if (ev.button != 0 && ev.button != 2) {
+      return;
+    }
+
+    let button = (ev.button == 0) ? 1 : 2;
+
+    let c = $('#c');
+
+    mx = ((ev.clientX / c.width()) * 428) | 0;
+    my = ((ev.clientY / c.height()) * 240) | 0;
+
+    let packet = new Uint8Array(6);
+    packet[0] = 0x01;
+    packet[1] = mx & 0xff;
+    packet[2] = (mx >> 8) & 0xff;
+    packet[3] = my & 0xff;
+    packet[4] = (my >> 8) & 0xff;
+    packet[5] = button;
+    ws.send(packet);
+
+    ev.preventDefault();
+  });
+
+  $('#c').mouseup(function(ev) {
+    if (!ws) {
+      return;
+    }
+
+    if (ev.button != 0 && ev.button != 2) {
+      return;
+    }
+
+    let button = (ev.button == 0) ? 1 : 2;
+
+    let c = $('#c');
+
+    mx = ((ev.clientX / c.width()) * 428) | 0;
+    my = ((ev.clientY / c.height()) * 240) | 0;
+
+    let packet = new Uint8Array(6);
+    packet[0] = 0x02;
+    packet[1] = mx & 0xff;
+    packet[2] = (mx >> 8) & 0xff;
+    packet[3] = my & 0xff;
+    packet[4] = (my >> 8) & 0xff;
+    packet[5] = button;
+    ws.send(packet);
+
+    ev.preventDefault();
+  });
+
+  $('#c').mousemove(function(ev) {
+    if (!ws) {
+      return;
+    }
+
+    let c = $('#c');
+
+    mx = ((ev.clientX / c.width()) * 428) | 0;
+    my = ((ev.clientY / c.height()) * 240) | 0;
+
+    let packet = new Uint8Array(5);
+    packet[0] = 0x03;
+    packet[1] = mx & 0xff;
+    packet[2] = (mx >> 8) & 0xff;
+    packet[3] = my & 0xff;
+    packet[4] = (my >> 8) & 0xff;
+    ws.send(packet);
+
+    ev.preventDefault();
+  });
+
+  const KEY_TO_CODE = {
+    ArrowUp    : 0x1000,
+    ArrowDown  : 0x1001,
+    ArrowLeft  : 0x1002,
+    ArrowRight : 0x1003,
+    Shift  : 0x1010,
+    Control   : 0x1020,
+    Alt   : 0x1030,
+    CapsLock    : 0x1040,
+
+    // Mimic ASCII codes from here.
+    "0" : 0x30,  // Not keypad! Just normal numbers.
+    "1" : 0x31,
+    "2" : 0x32,
+    "3" : 0x33,
+    "4" : 0x34,
+    "5" : 0x35,
+    "6" : 0x36,
+    "7" : 0x37,
+    "8" : 0x38,
+    "9" : 0x39,
+
+    ")" : 0x30,  // Not keypad! Just normal numbers.
+    "!" : 0x31,
+    "@" : 0x32,
+    "#" : 0x33,
+    "$" : 0x34,
+    "%" : 0x35,
+    "^" : 0x36,
+    "&" : 0x37,
+    "*" : 0x38,
+    "(" : 0x39,
+
+    "A" : 0x41,
+    "B" : 0x42,
+    "C" : 0x43,
+    "D" : 0x44,
+    "E" : 0x45,
+    "F" : 0x46,
+    "G" : 0x47,
+    "H" : 0x48,
+    "I" : 0x49,
+    "J" : 0x4a,
+    "K" : 0x4b,
+    "L" : 0x4c,
+    "M" : 0x4d,
+    "N" : 0x4e,
+    "O" : 0x4f,
+    "P" : 0x50,
+    "Q" : 0x51,
+    "R" : 0x52,
+    "S" : 0x53,
+    "T" : 0x54,
+    "U" : 0x55,
+    "V" : 0x56,
+    "W" : 0x57,
+    "X" : 0x58,
+    "Y" : 0x59,
+    "Z" : 0x5a,
+
+    "a" : 0x41,
+    "b" : 0x42,
+    "c" : 0x43,
+    "d" : 0x44,
+    "e" : 0x45,
+    "f" : 0x46,
+    "g" : 0x47,
+    "h" : 0x48,
+    "i" : 0x49,
+    "j" : 0x4a,
+    "k" : 0x4b,
+    "l" : 0x4c,
+    "m" : 0x4d,
+    "n" : 0x4e,
+    "o" : 0x4f,
+    "p" : 0x50,
+    "q" : 0x51,
+    "r" : 0x52,
+    "s" : 0x53,
+    "t" : 0x54,
+    "u" : 0x55,
+    "v" : 0x56,
+    "w" : 0x57,
+    "x" : 0x58,
+    "y" : 0x59,
+    "z" : 0x5a,
+
+    "'"  : 0x27,
+    "\"" : 0x27,
+    ","  : 0x2C,
+    "<"  : 0x2C,
+    "-"  : 0x2D,
+    "_"  : 0x2D,
+    "."  : 0x2E,
+    ">"  : 0x2E,
+    "/"  : 0x2F,
+    "?"  : 0x2F,
+    ";"  : 0x3B,
+    ":"  : 0x3B,
+    "="  : 0x3D,
+    "+"  : 0x3D,
+    "["  : 0x5B,
+    "{"  : 0x5B,
+    "]"  : 0x5D,
+    "}"  : 0x5D,
+    "\\" : 0x5C,
+    "|"  : 0x5C,
+    "`"  : 0x60,
+    "~"  : 0x60,
+    "Enter" : 0x0a,  // There is also KEYPAD_ENTER.
+    " " : 0x20,
+    "Backspace" : 0x08,
+    "Tab" : 0x09,
+    "Escape" : 0x1b
+  };
+
+  let send_key_ev = function (ev, down) {
+    if (!ws) {
+      return;
+    }
+
+    let code = 0;  // Unset.
+    if (!(ev.key in KEY_TO_CODE)) {
+      return;
+    }
+
+    code = KEY_TO_CODE[ev.key];
+
+    if (code == 0) {
+      return;
+    }
+
+    let packet = new Uint8Array(3);
+    packet[0] = down ? 0x10 : 0x11;
+    packet[1] = code & 0xff;
+    packet[2] = (code >> 8) & 0xff;
+    ws.send(packet);
+
+    ev.preventDefault();
+    return false;
+  };
+
+  $(window).keydown(function(ev) {
+    send_key_ev(ev, true);
+  });
+
+  $(window).keyup(function(ev) {
+    send_key_ev(ev, false);
+  });
+
+  setTimeout(render_splash_frame, 50);
+}
+/*
+var load_count = $('img').length;
+$('img').on('load', function() {
+  load_count--;
+
+  if (load_count == 0 && !started) {
+    started = true;
+    start();
+  }
+});
+*/
+
+function check_if_start() {
+  let loaded = true;
+  $('img').each(function(i, img) {
+    if (!img.complete || img.naturalWidth === 0) {
+      loaded = false;
+    }
+  });
+
+  if (loaded) {
+    start();
+  } else {
+    setTimeout(check_if_start, 100);
+  }
+}
+
+$(function() {
+  check_if_start();
+});
+  </script>
+</html>
+

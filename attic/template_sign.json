@@ -1,0 +1,26 @@
+{ "object":
+    {
+     "gid":4,
+     "height":16,
+     "id":8,
+     "name":"sign",
+     "properties":[
+            {
+             "name":"text",
+             "type":"string",
+             "value":"Danger Ahead!"
+            }],
+     "rotation":0,
+     "type":"sign",
+     "visible":true,
+     "width":16,
+     "x":2544,
+     "y":5008
+    },
+ "tileset":
+    {
+     "firstgid":1,
+     "source":"map-obj-tileset.json"
+    },
+ "type":"template"
+}

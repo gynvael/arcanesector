@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="../map-obj-tileset.json"/>
+ <object name="blocker" type="blocker" gid="1" width="16" height="16">
+  <properties>
+   <property name="blocker_group" value="maze_key"/>
+  </properties>
+ </object>
+</template>

@@ -1,0 +1,4592 @@
+{
+  "layers": [
+    {
+      "opacity": 1, 
+      "compression": "zlib", 
+      "encoding": "base64", 
+      "type": "tilelayer", 
+      "height": 768, 
+      "visible": true, 
+      "width": 512, 
+      "y": 0, 
+      "x": 0, 
+      "data": "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y/F9hFCNRvuN97xgnSOO91v9WnFYP7PxjOJQ+/GOw7ovmh9vf9m4qvLpXRfVefHmI/rcROc5m+fq59EbXzQP+D9CdcrU8Spn+0vkfKHe5z1fjK5Tx2Hdr/afnQfv/VXjUucnui6i69BaH9F8Recl+hx516c6H1V5jsbpXScIoRodny9vPR6p3z2fH6+zzg3q+9H21fur8qrGE50H6301r1XXeeOrylf1PEbHp+Jt56p1oN7n3Q8+30cI1chzjsjW8+r7Vv9XnTvUdkbXq/1ExxvNt/f+bN6912Xzmm1X/VxdN9H8R+fde793HVbf580bQqhGx+dNre9H11vtVN2vEh2H2o7V7qgfNR5vf7PnQ82zmkerX/VzK97ovFatE3UdZucrSvb5U/NYsT4QQjVSzgPe80P0vKD2N7pfRfWR6nbV+6Ofq/m18u59XXWfmr/oddF8R8evfh4db3R9qPFln4dZ6wIhVKPj85U9D1jtqP2MzgVWexYevzm7Xx2vOs7o+L3XqZ97+61aH9l1E51H7/tXjXPWuLL9zMqbFQf+j1CdPPX58af3+uN1Vv1vnQei92fHGR1PNH4rn+pPbxzqeKvzbMVZHa93Hal5rJovNR/evGTzrs5zNC78H6G5sp439VxQ/Trar7d99T71/eq4vPujN271czXOqvUSzac6P95+onFl8x+NL5v3aF6r1uPZdQihGnnOB9bno3NCtt634hn1q8Zpofaj3qe2681btp3oddn+qvOlzo+3n6q4vJ9H1290HN71pLbjfX/ULkKoRu/nSq3HRz+954do/W+1r543vO14x6He721Hfd+b76r8qe1VjcObH2u+o+uiejxqO9641furx+dt/yw+hFCNzupw709vPa+eG0bXedtR41avt/r1xuGNT81bdFze/qPz411H2ferx1s9/951rebdatf7OhpHdn9ACNXo/Vyp9fnop3Wd93xwVv9XvM62o8altqPmtbo/73ij8VvXR+PIXh/NZ/W68t5fNc/Z/Kio41DWC0KoRp7zgPWz6vygnhesOLzxWPdF44u2l50P77jUeYnef1Xeo3FH81udN/X5UvN91bqIzpM3bwihGr2fL6XuPnt/9Ll1DoieF7z9We2p90XjU8dvjUvtt2pc6ufR+ffGod7v/bx6nVfNa7ad6Dqx1ot6f3bdfesXIVSjSP1tnS/Uut57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", 
+      "id": 1, 
+      "name": "Imported"
+    }, 
+    {
+      "opacity": 1, 
+      "compression": "zlib", 
+      "encoding": "base64", 
+      "type": "tilelayer", 
+      "height": 768, 
+      "visible": true, 
+      "width": 512, 
+      "y": 0, 
+      "x": 0, 
+      "data": "eJztwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+BgFoAAE=", 
+      "id": 2, 
+      "name": "Patches"
+    }, 
+    {
+      "opacity": 1, 
+      "name": "System Objects", 
+      "visible": true, 
+      "objects": [
+        {
+          "y": 4992, 
+          "x": 2656, 
+          "id": 5, 
+          "template": "templates/spawn.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 1800
+            }, 
+            {
+              "type": "string", 
+              "name": "mob_class", 
+              "value": "spider"
+            }
+          ]
+        }, 
+        {
+          "y": 12032, 
+          "x": 112, 
+          "id": 93, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "flask"
+            }
+          ]
+        }, 
+        {
+          "y": 12032, 
+          "x": 96, 
+          "id": 94, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "flask"
+            }
+          ]
+        }, 
+        {
+          "y": 12032, 
+          "x": 128, 
+          "id": 95, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "flask"
+            }
+          ]
+        }, 
+        {
+          "y": 12032, 
+          "x": 144, 
+          "id": 96, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "flask"
+            }
+          ]
+        }, 
+        {
+          "y": 12032, 
+          "x": 160, 
+          "id": 97, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "flask"
+            }
+          ]
+        }, 
+        {
+          "y": 12032, 
+          "x": 176, 
+          "id": 98, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "flask"
+            }
+          ]
+        }, 
+        {
+          "y": 6832, 
+          "x": 2848, 
+          "id": 99, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6864, 
+          "x": 2832, 
+          "id": 100, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6864, 
+          "x": 2784, 
+          "id": 101, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6896, 
+          "x": 2848, 
+          "id": 102, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6784, 
+          "x": 2816, 
+          "id": 103, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6784, 
+          "x": 2768, 
+          "id": 104, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6896, 
+          "x": 2752, 
+          "id": 105, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6816, 
+          "x": 2736, 
+          "id": 106, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6768, 
+          "x": 2880, 
+          "id": 107, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6784, 
+          "x": 2912, 
+          "id": 108, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6912, 
+          "x": 2880, 
+          "id": 109, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6960, 
+          "x": 2896, 
+          "id": 110, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6944, 
+          "x": 2864, 
+          "id": 111, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6928, 
+          "x": 2784, 
+          "id": 112, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6768, 
+          "x": 2960, 
+          "id": 113, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6736, 
+          "x": 3024, 
+          "id": 114, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6800, 
+          "x": 3024, 
+          "id": 115, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6848, 
+          "x": 3024, 
+          "id": 116, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6896, 
+          "x": 3008, 
+          "id": 117, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6928, 
+          "x": 2944, 
+          "id": 118, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6976, 
+          "x": 2992, 
+          "id": 119, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6928, 
+          "x": 3040, 
+          "id": 120, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6832, 
+          "x": 3088, 
+          "id": 121, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6736, 
+          "x": 3072, 
+          "id": 122, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6704, 
+          "x": 2960, 
+          "id": 123, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6672, 
+          "x": 2896, 
+          "id": 124, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6720, 
+          "x": 2784, 
+          "id": 125, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6752, 
+          "x": 2752, 
+          "id": 126, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6832, 
+          "x": 2672, 
+          "id": 127, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6912, 
+          "x": 2688, 
+          "id": 128, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6976, 
+          "x": 2752, 
+          "id": 129, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6960, 
+          "x": 2816, 
+          "id": 130, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 7008, 
+          "x": 2880, 
+          "id": 131, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 7008, 
+          "x": 3008, 
+          "id": 132, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 6672, 
+          "x": 2768, 
+          "id": 133, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 2928, 
+          "x": 1936, 
+          "id": 135, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 30
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "teleport_ring"
+            }
+          ]
+        }, 
+        {
+          "y": 3168, 
+          "x": 6336, 
+          "id": 136, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 30
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "teleport_ring"
+            }
+          ]
+        }, 
+        {
+          "y": 1184, 
+          "x": 7264, 
+          "id": 137, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 30
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "teleport_ring"
+            }
+          ]
+        }, 
+        {
+          "y": 6512, 
+          "x": 4576, 
+          "id": 138, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 30
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "teleport_ring"
+            }
+          ]
+        }, 
+        {
+          "y": 5232, 
+          "x": 2320, 
+          "id": 139, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5264, 
+          "x": 2304, 
+          "id": 140, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5264, 
+          "x": 2256, 
+          "id": 141, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5296, 
+          "x": 2320, 
+          "id": 142, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5184, 
+          "x": 2288, 
+          "id": 143, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5184, 
+          "x": 2240, 
+          "id": 144, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5296, 
+          "x": 2224, 
+          "id": 145, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5216, 
+          "x": 2208, 
+          "id": 146, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5168, 
+          "x": 2352, 
+          "id": 147, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5184, 
+          "x": 2384, 
+          "id": 148, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5312, 
+          "x": 2352, 
+          "id": 149, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5360, 
+          "x": 2368, 
+          "id": 150, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5344, 
+          "x": 2336, 
+          "id": 151, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5328, 
+          "x": 2256, 
+          "id": 152, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5168, 
+          "x": 2432, 
+          "id": 153, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5136, 
+          "x": 2496, 
+          "id": 154, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5200, 
+          "x": 2496, 
+          "id": 155, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5248, 
+          "x": 2496, 
+          "id": 156, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5296, 
+          "x": 2480, 
+          "id": 157, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5328, 
+          "x": 2416, 
+          "id": 158, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5376, 
+          "x": 2464, 
+          "id": 159, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5328, 
+          "x": 2512, 
+          "id": 160, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5232, 
+          "x": 2560, 
+          "id": 161, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5136, 
+          "x": 2544, 
+          "id": 162, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5104, 
+          "x": 2432, 
+          "id": 163, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5072, 
+          "x": 2368, 
+          "id": 164, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5120, 
+          "x": 2256, 
+          "id": 165, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5152, 
+          "x": 2224, 
+          "id": 166, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5232, 
+          "x": 2144, 
+          "id": 167, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5312, 
+          "x": 2160, 
+          "id": 168, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5376, 
+          "x": 2224, 
+          "id": 169, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5360, 
+          "x": 2288, 
+          "id": 170, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5408, 
+          "x": 2352, 
+          "id": 171, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5408, 
+          "x": 2480, 
+          "id": 172, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5072, 
+          "x": 2240, 
+          "id": 173, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5712, 
+          "x": 3008, 
+          "id": 175, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5744, 
+          "x": 2992, 
+          "id": 176, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5744, 
+          "x": 2944, 
+          "id": 177, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5776, 
+          "x": 3008, 
+          "id": 178, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5664, 
+          "x": 2976, 
+          "id": 179, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5664, 
+          "x": 2928, 
+          "id": 180, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5776, 
+          "x": 2912, 
+          "id": 181, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5696, 
+          "x": 2896, 
+          "id": 182, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5648, 
+          "x": 3040, 
+          "id": 183, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5664, 
+          "x": 3072, 
+          "id": 184, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5792, 
+          "x": 3040, 
+          "id": 185, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5840, 
+          "x": 3056, 
+          "id": 186, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5824, 
+          "x": 3024, 
+          "id": 187, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5808, 
+          "x": 2944, 
+          "id": 188, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5648, 
+          "x": 3120, 
+          "id": 189, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5616, 
+          "x": 3184, 
+          "id": 190, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5680, 
+          "x": 3184, 
+          "id": 191, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5728, 
+          "x": 3184, 
+          "id": 192, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5776, 
+          "x": 3168, 
+          "id": 193, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5808, 
+          "x": 3104, 
+          "id": 194, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5856, 
+          "x": 3152, 
+          "id": 195, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5808, 
+          "x": 3200, 
+          "id": 196, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5712, 
+          "x": 3248, 
+          "id": 197, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5616, 
+          "x": 3232, 
+          "id": 198, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5584, 
+          "x": 3120, 
+          "id": 199, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5552, 
+          "x": 3056, 
+          "id": 200, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5600, 
+          "x": 2944, 
+          "id": 201, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5632, 
+          "x": 2912, 
+          "id": 202, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5712, 
+          "x": 2832, 
+          "id": 203, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5792, 
+          "x": 2848, 
+          "id": 204, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5856, 
+          "x": 2912, 
+          "id": 205, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5840, 
+          "x": 2976, 
+          "id": 206, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5888, 
+          "x": 3040, 
+          "id": 207, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5888, 
+          "x": 3168, 
+          "id": 208, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5552, 
+          "x": 2928, 
+          "id": 209, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3552, 
+          "x": 6336, 
+          "id": 210, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3584, 
+          "x": 6320, 
+          "id": 211, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3584, 
+          "x": 6272, 
+          "id": 212, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3616, 
+          "x": 6336, 
+          "id": 213, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3504, 
+          "x": 6304, 
+          "id": 214, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3504, 
+          "x": 6256, 
+          "id": 215, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3616, 
+          "x": 6240, 
+          "id": 216, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3536, 
+          "x": 6224, 
+          "id": 217, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3488, 
+          "x": 6368, 
+          "id": 218, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3504, 
+          "x": 6400, 
+          "id": 219, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3632, 
+          "x": 6368, 
+          "id": 220, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3680, 
+          "x": 6384, 
+          "id": 221, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3664, 
+          "x": 6352, 
+          "id": 222, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3648, 
+          "x": 6272, 
+          "id": 223, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3488, 
+          "x": 6448, 
+          "id": 224, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3456, 
+          "x": 6512, 
+          "id": 225, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3520, 
+          "x": 6512, 
+          "id": 226, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3568, 
+          "x": 6512, 
+          "id": 227, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3616, 
+          "x": 6496, 
+          "id": 228, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3648, 
+          "x": 6432, 
+          "id": 229, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3696, 
+          "x": 6480, 
+          "id": 230, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3648, 
+          "x": 6528, 
+          "id": 231, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3552, 
+          "x": 6576, 
+          "id": 232, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3456, 
+          "x": 6560, 
+          "id": 233, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3424, 
+          "x": 6448, 
+          "id": 234, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3392, 
+          "x": 6384, 
+          "id": 235, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3440, 
+          "x": 6272, 
+          "id": 236, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3472, 
+          "x": 6240, 
+          "id": 237, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3552, 
+          "x": 6160, 
+          "id": 238, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3632, 
+          "x": 6176, 
+          "id": 239, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3696, 
+          "x": 6240, 
+          "id": 240, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3680, 
+          "x": 6304, 
+          "id": 241, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3728, 
+          "x": 6368, 
+          "id": 242, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3728, 
+          "x": 6496, 
+          "id": 243, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 3392, 
+          "x": 6256, 
+          "id": 244, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1968, 
+          "x": 7616, 
+          "id": 245, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 2000, 
+          "x": 7600, 
+          "id": 246, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 2000, 
+          "x": 7552, 
+          "id": 247, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 2032, 
+          "x": 7616, 
+          "id": 248, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1920, 
+          "x": 7584, 
+          "id": 249, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1920, 
+          "x": 7536, 
+          "id": 250, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 2032, 
+          "x": 7520, 
+          "id": 251, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1952, 
+          "x": 7504, 
+          "id": 252, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1904, 
+          "x": 7648, 
+          "id": 253, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1920, 
+          "x": 7680, 
+          "id": 254, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 2048, 
+          "x": 7648, 
+          "id": 255, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 2096, 
+          "x": 7664, 
+          "id": 256, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 2080, 
+          "x": 7632, 
+          "id": 257, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 2064, 
+          "x": 7552, 
+          "id": 258, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1904, 
+          "x": 7728, 
+          "id": 259, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1872, 
+          "x": 7792, 
+          "id": 260, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1936, 
+          "x": 7792, 
+          "id": 261, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1984, 
+          "x": 7792, 
+          "id": 262, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 2032, 
+          "x": 7776, 
+          "id": 263, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 2064, 
+          "x": 7712, 
+          "id": 264, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 2112, 
+          "x": 7760, 
+          "id": 265, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 2064, 
+          "x": 7808, 
+          "id": 266, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1968, 
+          "x": 7856, 
+          "id": 267, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1872, 
+          "x": 7840, 
+          "id": 268, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1840, 
+          "x": 7728, 
+          "id": 269, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1808, 
+          "x": 7664, 
+          "id": 270, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1856, 
+          "x": 7552, 
+          "id": 271, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1888, 
+          "x": 7520, 
+          "id": 272, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1968, 
+          "x": 7440, 
+          "id": 273, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 2048, 
+          "x": 7456, 
+          "id": 274, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 2112, 
+          "x": 7520, 
+          "id": 275, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 2096, 
+          "x": 7584, 
+          "id": 276, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 2144, 
+          "x": 7648, 
+          "id": 277, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 2144, 
+          "x": 7776, 
+          "id": 278, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1808, 
+          "x": 7536, 
+          "id": 279, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1584, 
+          "x": 7488, 
+          "id": 280, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1616, 
+          "x": 7472, 
+          "id": 281, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1616, 
+          "x": 7424, 
+          "id": 282, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1648, 
+          "x": 7488, 
+          "id": 283, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1536, 
+          "x": 7456, 
+          "id": 284, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1536, 
+          "x": 7408, 
+          "id": 285, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1648, 
+          "x": 7392, 
+          "id": 286, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1568, 
+          "x": 7376, 
+          "id": 287, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1520, 
+          "x": 7520, 
+          "id": 288, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1536, 
+          "x": 7552, 
+          "id": 289, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1664, 
+          "x": 7520, 
+          "id": 290, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1712, 
+          "x": 7536, 
+          "id": 291, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1696, 
+          "x": 7504, 
+          "id": 292, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1680, 
+          "x": 7424, 
+          "id": 293, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1520, 
+          "x": 7600, 
+          "id": 294, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1488, 
+          "x": 7664, 
+          "id": 295, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1552, 
+          "x": 7664, 
+          "id": 296, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1600, 
+          "x": 7664, 
+          "id": 297, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1648, 
+          "x": 7648, 
+          "id": 298, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1680, 
+          "x": 7584, 
+          "id": 299, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1728, 
+          "x": 7632, 
+          "id": 300, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1680, 
+          "x": 7680, 
+          "id": 301, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1584, 
+          "x": 7728, 
+          "id": 302, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1488, 
+          "x": 7712, 
+          "id": 303, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1456, 
+          "x": 7600, 
+          "id": 304, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1424, 
+          "x": 7536, 
+          "id": 305, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1472, 
+          "x": 7424, 
+          "id": 306, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1504, 
+          "x": 7392, 
+          "id": 307, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1584, 
+          "x": 7312, 
+          "id": 308, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1664, 
+          "x": 7328, 
+          "id": 309, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1728, 
+          "x": 7392, 
+          "id": 310, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1712, 
+          "x": 7456, 
+          "id": 311, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1760, 
+          "x": 7520, 
+          "id": 312, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1760, 
+          "x": 7648, 
+          "id": 313, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 1424, 
+          "x": 7408, 
+          "id": 314, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "herb"
+            }
+          ]
+        }, 
+        {
+          "y": 5200, 
+          "x": 3680, 
+          "id": 315, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "flask"
+            }
+          ]
+        }, 
+        {
+          "y": 5184, 
+          "x": 3680, 
+          "id": 316, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "flask"
+            }
+          ]
+        }, 
+        {
+          "y": 5216, 
+          "x": 3680, 
+          "id": 317, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "flask"
+            }
+          ]
+        }, 
+        {
+          "y": 5232, 
+          "x": 3680, 
+          "id": 318, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "flask"
+            }
+          ]
+        }, 
+        {
+          "y": 5232, 
+          "x": 3696, 
+          "id": 319, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "flask"
+            }
+          ]
+        }, 
+        {
+          "y": 5248, 
+          "x": 3696, 
+          "id": 320, 
+          "template": "templates/spawn_item.tx", 
+          "properties": [
+            {
+              "type": "int", 
+              "name": "cooldown", 
+              "value": 60
+            }, 
+            {
+              "type": "string", 
+              "name": "item_class", 
+              "value": "flask"
+            }
+          ]
+        }
+      ], 
+      "draworder": "topdown", 
+      "y": 0, 
+      "x": 0, 
+      "type": "objectgroup", 
+      "id": 3
+    }, 
+    {
+      "opacity": 1, 
+      "name": "Items", 
+      "visible": true, 
+      "objects": [
+        {
+          "y": 6864, 
+          "x": 2944, 
+          "id": 11, 
+          "template": "templates/sign.tx", 
+          "properties": [
+            {
+              "type": "string", 
+              "name": "text", 
+              "value": "Welcome to Arcane Island"
+            }
+          ]
+        }, 
+        {
+          "name": "sign", 
+          "id": 13, 
+          "template": "templates/sign.tx", 
+          "y": 4992, 
+          "x": 2544, 
+          "properties": [
+            {
+              "type": "string", 
+              "name": "text", 
+              "value": "Danger Ahead!"
+            }
+          ]
+        }, 
+        {
+          "name": "test_building", 
+          "id": 15, 
+          "template": "templates/door.tx", 
+          "y": 6192, 
+          "x": 2128, 
+          "properties": [
+            {
+              "type": "string", 
+              "name": "teleport_group", 
+              "value": "test_building"
+            }
+          ]
+        }, 
+        {
+          "name": "test_building", 
+          "id": 16, 
+          "template": "templates/door.tx", 
+          "y": 12224, 
+          "x": 112, 
+          "properties": [
+            {
+              "type": "string", 
+              "name": "teleport_group", 
+              "value": "test_building"
+            }
+          ]
+        }, 
+        {
+          "y": 2576, 
+          "x": 736, 
+          "id": 35, 
+          "template": "templates/flag_sign.tx", 
+          "properties": [
+            {
+              "type": "string", 
+              "name": "flag_file", 
+              "value": "flag_island.txt"
+            }
+          ]
+        }, 
+        {
+          "y": 4816, 
+          "x": 3536, 
+          "id": 36, 
+          "template": "templates/flag_sign.tx", 
+          "properties": [
+            {
+              "type": "string", 
+              "name": "flag_file", 
+              "value": "flag_mountain.txt"
+            }
+          ]
+        }, 
+        {
+          "name": "door", 
+          "id": 37, 
+          "template": "templates/door.tx", 
+          "y": 8368, 
+          "x": 176, 
+          "properties": [
+            {
+              "type": "string", 
+              "name": "teleport_group", 
+              "value": "maze"
+            }
+          ]
+        }, 
+        {
+          "name": "door", 
+          "id": 38, 
+          "template": "templates/door.tx", 
+          "y": 5552, 
+          "x": 6560, 
+          "properties": [
+            {
+              "type": "string", 
+              "name": "teleport_group", 
+              "value": "maze"
+            }
+          ]
+        }, 
+        {
+          "y": 9568, 
+          "x": 5536, 
+          "id": 39, 
+          "template": "templates/flag_sign.tx", 
+          "properties": [
+            {
+              "type": "string", 
+              "name": "flag_file", 
+              "value": "flag_maze.txt"
+            }
+          ]
+        }, 
+        {
+          "y": 9568, 
+          "x": 5168, 
+          "id": 40, 
+          "template": "templates/blocker.tx"
+        }, 
+        {
+          "y": 9568, 
+          "x": 5200, 
+          "id": 41, 
+          "template": "templates/blocker.tx"
+        }, 
+        {
+          "y": 9568, 
+          "x": 5184, 
+          "id": 42, 
+          "template": "templates/blocker.tx"
+        }, 
+        {
+          "y": 9568, 
+          "x": 5216, 
+          "id": 43, 
+          "template": "templates/blocker.tx"
+        }, 
+        {
+          "y": 9568, 
+          "x": 5232, 
+          "id": 44, 
+          "template": "templates/blocker.tx"
+        }, 
+        {
+          "y": 9568, 
+          "x": 5248, 
+          "id": 45, 
+          "template": "templates/blocker.tx"
+        }, 
+        {
+          "y": 9568, 
+          "x": 5264, 
+          "id": 46, 
+          "template": "templates/blocker.tx"
+        }, 
+        {
+          "y": 9568, 
+          "x": 5280, 
+          "id": 47, 
+          "template": "templates/blocker.tx"
+        }, 
+        {
+          "y": 9568, 
+          "x": 5296, 
+          "id": 48, 
+          "template": "templates/blocker.tx"
+        }, 
+        {
+          "y": 9568, 
+          "x": 5312, 
+          "id": 49, 
+          "template": "templates/blocker.tx"
+        }, 
+        {
+          "y": 9568, 
+          "x": 5328, 
+          "id": 50, 
+          "template": "templates/blocker.tx"
+        }, 
+        {
+          "y": 9568, 
+          "x": 5344, 
+          "id": 52, 
+          "template": "templates/blocker.tx"
+        }, 
+        {
+          "y": 9568, 
+          "x": 5360, 
+          "id": 53, 
+          "template": "templates/blocker.tx"
+        }, 
+        {
+          "y": 9568, 
+          "x": 5376, 
+          "id": 54, 
+          "template": "templates/blocker.tx"
+        }, 
+        {
+          "y": 9568, 
+          "x": 5392, 
+          "id": 55, 
+          "template": "templates/blocker.tx"
+        }, 
+        {
+          "y": 9568, 
+          "x": 5408, 
+          "id": 56, 
+          "template": "templates/blocker.tx"
+        }, 
+        {
+          "y": 9568, 
+          "x": 5424, 
+          "id": 57, 
+          "template": "templates/blocker.tx"
+        }, 
+        {
+          "y": 9568, 
+          "x": 5440, 
+          "id": 58, 
+          "template": "templates/blocker.tx"
+        }, 
+        {
+          "y": 9568, 
+          "x": 5456, 
+          "id": 59, 
+          "template": "templates/blocker.tx"
+        }, 
+        {
+          "y": 9568, 
+          "x": 5472, 
+          "id": 60, 
+          "template": "templates/blocker.tx"
+        }, 
+        {
+          "y": 9568, 
+          "x": 5488, 
+          "id": 61, 
+          "template": "templates/blocker.tx"
+        }, 
+        {
+          "y": 9488, 
+          "x": 5152, 
+          "id": 62, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9504, 
+          "x": 5152, 
+          "id": 63, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9520, 
+          "x": 5152, 
+          "id": 65, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9536, 
+          "x": 5152, 
+          "id": 66, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9584, 
+          "x": 5152, 
+          "id": 67, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9600, 
+          "x": 5152, 
+          "id": 68, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9616, 
+          "x": 5152, 
+          "id": 69, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9632, 
+          "x": 5152, 
+          "id": 70, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9648, 
+          "x": 5152, 
+          "id": 71, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9664, 
+          "x": 5152, 
+          "id": 72, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9680, 
+          "x": 5152, 
+          "id": 73, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9696, 
+          "x": 5152, 
+          "id": 74, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9712, 
+          "x": 5136, 
+          "id": 75, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9712, 
+          "x": 5120, 
+          "id": 76, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9712, 
+          "x": 5104, 
+          "id": 77, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9712, 
+          "x": 5088, 
+          "id": 78, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9712, 
+          "x": 5072, 
+          "id": 79, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9712, 
+          "x": 5056, 
+          "id": 80, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9712, 
+          "x": 5040, 
+          "id": 81, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9472, 
+          "x": 5136, 
+          "id": 82, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9472, 
+          "x": 5120, 
+          "id": 83, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9472, 
+          "x": 5104, 
+          "id": 84, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9472, 
+          "x": 5088, 
+          "id": 85, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9472, 
+          "x": 5072, 
+          "id": 86, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9472, 
+          "x": 5056, 
+          "id": 87, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9472, 
+          "x": 5040, 
+          "id": 88, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9696, 
+          "x": 5024, 
+          "id": 89, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9488, 
+          "x": 5024, 
+          "id": 90, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9680, 
+          "x": 5024, 
+          "id": 91, 
+          "template": "templates/switch.tx"
+        }, 
+        {
+          "y": 9504, 
+          "x": 5024, 
+          "id": 92, 
+          "template": "templates/switch.tx"
+        }
+      ], 
+      "draworder": "topdown", 
+      "y": 0, 
+      "x": 0, 
+      "type": "objectgroup", 
+      "id": 4
+    }
+  ], 
+  "orientation": "orthogonal", 
+  "tileheight": 16, 
+  "tiledversion": "1.2.1", 
+  "tilewidth": 16, 
+  "version": 1.2, 
+  "height": 768, 
+  "width": 512, 
+  "renderorder": "right-down", 
+  "nextlayerid": 5, 
+  "tilesets": [
+    {
+      "source": "map-edges-tileset.json", 
+      "firstgid": 1
+    }, 
+    {
+      "source": "map-obj-tileset.json", 
+      "firstgid": 33
+    }
+  ], 
+  "infinite": false, 
+  "type": "map", 
+  "nextobjectid": 321
+}

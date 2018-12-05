@@ -1,0 +1,2 @@
+all:
+	g++ -Wall -Wextra fake_client.cc -o client

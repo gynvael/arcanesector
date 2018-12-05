@@ -1,0 +1,85 @@
+Arcane Sector Online
+by Dragon Sector
+
+NOTE:
+Not all assets linked below were used in the final version of Arcane Sector, but
+if they were in some version/build the credits are here.
+
++++ Bertrand Dupuy
+All the graphics that were made especially for this game and look awesome (trees
+used in the most recent version, UI, logo) were made by Bertrand Dupuy and are
+copyrighted to Gynvael Coldwind. Please assume they are CC-BY-SA 3.0.
+
++++ Gynvael Coldwind
+Uhm, actually some stuff I made myself (hint: the ugly ones, e.g. map icons). Assume they are
+CC0 if you really want to use them.
+
++++ Beast
+Art by MrBeast. Commissioned by OpenGameArt.org (http://opengameart.org)
+https://opengameart.org/content/worldmapoverworld-tileset (CC-BY 3.0)
+https://opengameart.org/content/cave-tileset-0 (CC-BY 3.0, GPL 2.0)
+
++++ Cerbion
+https://opengameart.org/content/5-rpg-fantasy-weapons (CC0)
+
++++ Joe Williamson, Twitter: @JoeCreates
+https://opengameart.org/content/roguelike-monsters (CC-BY-SA 3.0)
+https://opengameart.org/content/roguelike-dungeonworld-tiles (CC-BY-SA 3.0)
+https://opengameart.org/content/roguelikerpg-items (CC-BY-SA 3.0)
+
++++ Nemisys
+https://opengameart.org/content/lpc-sign-post (CC-BY 3.0, CC-BY-SA 3.0, GPL 3.0, OGA-BY 3.0)
+
++++ West
+https://opengameart.org/content/wall-grass-rock-stone-wood-and-dirt-480 (CC0)
+
+
++++ Copyright © 2017 Kimmo Rundelin
+https://opengameart.org/node/81447 (CC-BY-SA 3.0)
+
++++ Created by Yar
+https://opengameart.org/node/81685 (CC-BY 3.0)
+https://opengameart.org/node/81764 (CC-BY 3.0)
+
+
++++ bart
+https://opengameart.org/content/sky-backdrop (CC-BY 3.0, CC-BY-SA 3.0, GPL 3.0, GPL 2.0)
+
++++ MrCraft Animation
+https://opengameart.org/content/water-texture-pack (CC0)
+
++++ Zabin
+https://opengameart.org/content/the-battle-for-wesnoth-water-animation (CC0)
+
++++ Jattenalle
+www.GodsAndIdols.com
+https://opengameart.org/node/10510 (CC-BY 3.0)
+
++++ Keith333
+http://www.benkyoustudio.com/Textures/
+https://opengameart.org/content/granite-texture-black-with-white-streaks-seamless-texture-with-normalmap (CC-BY 3.0)
+
++++ OnixGames
+Made by onixgames.com
+https://opengameart.org/content/pixelart-fantasy-font-for-construct-2 (CC0)
+
++++ ZiNGOT
+Zingot Games / www.zingot.com
+https://opengameart.org/content/bitmap-font-pack (CC-BY 3.0)
+
++++ nicubunu
+https://opengameart.org/content/post-sign (CC0)
+
++++ AntumDeluge
+Created by Curt, Sharm, William.Thompsonj, & mold (CC-BY 3.0, GPL 3.0, GPL 2.0)
+https://opengameart.org/content/lpc-lamp-posts-rework
+
++++ Kenney
+https://opengameart.org/content/crosshair-pack-200%C3%97 (CC0)
+
++++ Calinou
+https://opengameart.org/content/simple-crosshairs (CC0)
+
++++ Reemax
+https://opengameart.org/content/castle-door (CC-BY 3.0)
+

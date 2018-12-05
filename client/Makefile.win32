@@ -1,0 +1,46 @@
+LIBS=-lws2_32 -lSDL2 -lSDL2_image
+CFLAGS=-O3 -DNDEBUG -Wall -Wextra -Wno-comment -std=c++17 -ggdb
+
+all: aes/aes.o client.o NetSock.o engine.o world_map.o ui_sdl2.o logic.o packets.o md5/md5.o items_helper.o ui_ws.o
+	g++ ${CFLAGS} \
+      client.o NetSock.o engine.o world_map.o \
+      ui_sdl2.o logic.o packets.o items_helper.o \
+      aes/aes.o md5/md5.o ui_ws.o \
+      -o client.exe ${LIBS}
+
+client.o: client.cc *.h
+	g++ ${CFLAGS} -c client.cc
+
+ui_ws.o: ui_ws.cc *.h
+	g++ ${CFLAGS} -c ui_ws.cc
+
+NetSock.o: NetSock.cc *.h
+	g++ ${CFLAGS} -c NetSock.cc
+
+engine.o: engine.cc *.h
+	g++ ${CFLAGS} -c engine.cc
+
+world_map.o: world_map.cc *.h
+	g++ ${CFLAGS} -c world_map.cc
+
+ui_sdl2.o: ui_sdl2.cc *.h
+	g++ ${CFLAGS} -c ui_sdl2.cc
+
+logic.o: logic.cc *.h
+	g++ ${CFLAGS} -c logic.cc
+
+packets.o: packets.cc *.h
+	g++ ${CFLAGS} -c packets.cc
+
+items_helper.o: items_helper.cc *.h
+	g++ ${CFLAGS} -c items_helper.cc
+
+aes/aes.o: aes/aes.c aes/aes.h aes/aes.hpp
+	gcc ${CFLAGS} \
+      aes/aes.c -c -o aes/aes.o
+
+md5/md5.o: md5/md5.c md5/md5.h md5/md5.hpp
+	gcc ${CFLAGS} -c md5/md5.c -o md5/md5.o
+
+clean:
+	del /f *.o aes\\aes.o

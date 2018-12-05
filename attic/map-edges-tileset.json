@@ -1,0 +1,14 @@
+{ "columns":16,
+ "image":"map-edges-tileset.png",
+ "imageheight":32,
+ "imagewidth":256,
+ "margin":0,
+ "name":"map-edges-tileset",
+ "spacing":0,
+ "tilecount":32,
+ "tiledversion":"1.2.0",
+ "tileheight":16,
+ "tilewidth":16,
+ "type":"tileset",
+ "version":1.2
+}

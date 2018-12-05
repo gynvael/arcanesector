@@ -1,0 +1,40 @@
+CXX ?= g++
+CC ?= gcc
+LIBS ?= -lSDL2 -lSDL2_image -lpthread
+CFLAGS ?= -O3 -DNDEBUG -Wall -Wextra -Wno-comment -ggdb
+CXXFLAGS ?= $(CFLAGS) -std=c++17
+
+default: client
+
+all: client
+
+SRCS := \
+		client.cc \
+		NetSock.cc \
+		engine.cc \
+		world_map.cc \
+		ui_sdl2.cc \
+		ui_ws.cc \
+		logic.cc \
+		packets.cc \
+		items_helper.cc \
+		aes/aes.c \
+		md5/md5.c
+
+DEPS := $(patsubst %.c,%.d,$(patsubst %.cc,%.d, $(SRCS)))
+OBJS := $(patsubst %.c,%.o,$(patsubst %.cc,%.oo, $(SRCS)))
+
+client: $(OBJS)
+	$(CXX) $(CFLAGS) $(OBJS) -o $@ $(LIBS)
+
+%.oo: %.cc
+	$(CXX) $(CXXFLAGS) -c $< -o $@ -MMD
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@ -MMD
+
+
+-include $(DEPS)
+
+clean:
+	rm -f $(OBJS) $(DEPS) $ client

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+ <tileset firstgid="1" source="../map-obj-tileset.json"/>
+ <object name="switch" type="switch" gid="5" width="16" height="16">
+  <properties>
+   <property name="switch_group" value="maze"/>
+  </properties>
+ </object>
+</template>
