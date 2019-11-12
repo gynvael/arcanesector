@@ -266,8 +266,8 @@ The client wants to drop the held item in the inventory, in the equipment or on 
 
 | Offset (hex) | Type / Size  | Name       | Description
 | ------------ | ------------ | ---------- | ----------------------------------------
-| 8            | uint8_t      | dst        | Destination mapped as: 0-7 inventory slots, 8-9 left and right hand (equipment), or (any other value) ground where the player is at.
-| **8**        | ← **total size**
+| 0            | uint8_t      | dst        | Destination mapped as: 0-7 inventory slots, 8-9 left and right hand (equipment), or (any other value) ground where the player is at.
+| **1**        | ← **total size**
 
 ### Holding (S→C) "HLDI"
 The client is holding the item and should display the item as the mouse cursor.
